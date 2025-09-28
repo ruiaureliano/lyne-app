@@ -1,0 +1,4 @@
+#!/bin/sh
+
+defaults delete net.lyneapp.Line-paddle
+echo "   🟢 Delete [delete net.lyneapp.Line-paddle]"

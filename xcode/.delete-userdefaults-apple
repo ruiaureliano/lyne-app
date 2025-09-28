@@ -1,0 +1,3 @@
+#!/bin/sh
+defaults delete net.lyneapp.Line
+echo "   🟢 Delete [delete net.lyneapp.Line]"

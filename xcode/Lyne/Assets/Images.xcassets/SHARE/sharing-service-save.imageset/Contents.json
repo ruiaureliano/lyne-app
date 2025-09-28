@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "sharing-service-save.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "sharing-service-save@2x.png",
+      "idiom" : "mac",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

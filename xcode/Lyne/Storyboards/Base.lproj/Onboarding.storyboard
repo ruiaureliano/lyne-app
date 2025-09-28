@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="3Zj-j6-K42">
+            <objects>
+                <windowController storyboardIdentifier="OnboardingWindowController" id="iLj-uS-meb" customClass="OnboardingWindowController" customModule="Lyne" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Onboarding" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Pl8-SB-gfH" customClass="ContrastWindow" customModule="Lyne" customModuleProvider="target">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
+                        <rect key="contentRect" x="425" y="462" width="400" height="400"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <value key="minSize" type="size" width="400" height="400"/>
+                        <value key="maxSize" type="size" width="400" height="400"/>
+                        <value key="minFullScreenContentSize" type="size" width="400" height="400"/>
+                        <value key="maxFullScreenContentSize" type="size" width="400" height="400"/>
+                        <view key="contentView" clipsToBounds="YES" id="YbN-nL-l74">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="iLj-uS-meb" id="eUU-eH-ltl"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="c3T-PO-a82" kind="relationship" relationship="window.shadowedContentViewController" id="MqT-dc-N4I"/>
+                    </connections>
+                </windowController>
+                <customObject id="7i8-f5-Qxy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-311"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="6Pl-hD-HRV">
+            <objects>
+                <viewController id="c3T-PO-a82" customClass="OnboardingViewController" customModule="Lyne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsToBounds="YES" id="7AB-Xm-4Dg">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView clipsToBounds="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Tj-DM-FqY" userLabel="BACKGROUND">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-background" id="LAG-LF-Xh7"/>
+                            </imageView>
+                            <customView clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKx-2g-4nS" userLabel="WELCOME">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                <subviews>
+                                    <imageView clipsToBounds="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KSy-el-vJ6" userLabel="ICON">
+                                        <rect key="frame" x="118" y="206" width="164" height="164"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="164" id="J95-ea-JbU"/>
+                                            <constraint firstAttribute="width" constant="164" id="lX0-PM-SPP"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-icon-welcome" id="Yk2-jp-NBG"/>
+                                    </imageView>
+                                    <textField clipsToBounds="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-nK-LlN" userLabel="TITLE" customClass="NSLabel" customModule="Lyne" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="184" width="300" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="FVu-xy-284"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to Lyne" id="oAY-2H-hNF">
+                                            <font key="font" metaFont="system" size="24"/>
+                                            <color key="textColor" red="0.19510157580000001" green="0.10406452619999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField clipsToBounds="YES" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Twp-eC-k49" userLabel="SUBTITLE" customClass="NSWrapLabel" customModule="Lyne" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="111" width="300" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="YWx-Yg-C4a"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" alignment="center" title="Let's make Lyne work perfectly for you by adjusting some preferences." id="Vx2-1g-P02">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" red="0.19510157580000001" green="0.10406452619999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="lineSpaceEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineSpace">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centered" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ast-nK-LlN" firstAttribute="leading" secondItem="gKx-2g-4nS" secondAttribute="leading" constant="52" id="FaK-6O-KAg"/>
+                                    <constraint firstAttribute="height" constant="400" id="Iiv-j8-JYa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ast-nK-LlN" secondAttribute="trailing" constant="52" id="JTF-QF-eh6"/>
+                                    <constraint firstItem="Twp-eC-k49" firstAttribute="leading" secondItem="gKx-2g-4nS" secondAttribute="leading" constant="52" id="LMH-ya-M3q"/>
+                                    <constraint firstAttribute="width" constant="400" id="Nqn-xy-XNc"/>
+                                    <constraint firstItem="Ast-nK-LlN" firstAttribute="top" secondItem="gKx-2g-4nS" secondAttribute="top" constant="188" id="SL2-CS-cbe"/>
+                                    <constraint firstItem="Twp-eC-k49" firstAttribute="top" secondItem="Ast-nK-LlN" secondAttribute="bottom" constant="17" id="clO-q9-mXO"/>
+                                    <constraint firstItem="KSy-el-vJ6" firstAttribute="top" secondItem="gKx-2g-4nS" secondAttribute="top" constant="30" id="t87-ds-rfI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Twp-eC-k49" secondAttribute="trailing" constant="52" id="wkT-1d-vUv"/>
+                                    <constraint firstItem="KSy-el-vJ6" firstAttribute="centerX" secondItem="gKx-2g-4nS" secondAttribute="centerX" id="zdl-tb-0R1"/>
+                                </constraints>
+                            </customView>
+                            <customView clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-GX-dfU" userLabel="LOGIN">
+                                <rect key="frame" x="400" y="0.0" width="400" height="400"/>
+                                <subviews>
+                                    <imageView clipsToBounds="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qln-Hc-QKm" userLabel="ICON">
+                                        <rect key="frame" x="118" y="206" width="164" height="164"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="164" id="OO6-TQ-NLk"/>
+                                            <constraint firstAttribute="width" constant="164" id="umX-h3-pa4"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-icon-login" id="RpF-nS-6qi"/>
+                                    </imageView>
+                                    <textField clipsToBounds="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Szb-SL-JjI" userLabel="TITLE" customClass="NSLabel" customModule="Lyne" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="184" width="300" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="qWu-WM-anf"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Start Automatically" id="Znn-Be-cRS">
+                                            <font key="font" metaFont="system" size="24"/>
+                                            <color key="textColor" red="0.19510157580000001" green="0.10406452619999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField clipsToBounds="YES" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="o2j-xW-W7O" userLabel="SUBTITLE" customClass="NSWrapLabel" customModule="Lyne" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="111" width="300" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="a0r-pc-irh"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" alignment="center" title="Save time by having Lyne ready to use when you start your Mac." id="bo4-0y-aQ8">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" red="0.19510157580000001" green="0.10406452619999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="lineSpaceEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineSpace">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centered" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="QaH-vC-NhD" userLabel="SWITCH">
+                                        <rect key="frame" x="179" y="89" width="42" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="XEd-AU-xZa"/>
+                                            <constraint firstAttribute="width" constant="38" id="eMN-oj-wcg"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="switchButtonPress:" target="c3T-PO-a82" id="2qU-4i-CYX"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="o2j-xW-W7O" secondAttribute="trailing" constant="52" id="5wO-4k-quM"/>
+                                    <constraint firstItem="QaH-vC-NhD" firstAttribute="centerX" secondItem="sAd-GX-dfU" secondAttribute="centerX" id="6DK-39-NC4"/>
+                                    <constraint firstAttribute="width" constant="400" id="9Nm-QN-DCS"/>
+                                    <constraint firstAttribute="height" constant="400" id="Lx1-KT-CIA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Szb-SL-JjI" secondAttribute="trailing" constant="52" id="OyS-Fw-890"/>
+                                    <constraint firstItem="QaH-vC-NhD" firstAttribute="top" secondItem="o2j-xW-W7O" secondAttribute="bottom" constant="-2" id="QJJ-oj-mau"/>
+                                    <constraint firstItem="Qln-Hc-QKm" firstAttribute="centerX" secondItem="sAd-GX-dfU" secondAttribute="centerX" id="YPe-I5-jUk"/>
+                                    <constraint firstItem="o2j-xW-W7O" firstAttribute="top" secondItem="Szb-SL-JjI" secondAttribute="bottom" constant="17" id="aYn-hI-sO1"/>
+                                    <constraint firstItem="Qln-Hc-QKm" firstAttribute="top" secondItem="sAd-GX-dfU" secondAttribute="top" constant="30" id="dFc-zy-2Jp"/>
+                                    <constraint firstItem="Szb-SL-JjI" firstAttribute="leading" secondItem="sAd-GX-dfU" secondAttribute="leading" constant="52" id="q8B-Bl-3la"/>
+                                    <constraint firstItem="o2j-xW-W7O" firstAttribute="leading" secondItem="sAd-GX-dfU" secondAttribute="leading" constant="52" id="suM-km-FP5"/>
+                                    <constraint firstItem="Szb-SL-JjI" firstAttribute="top" secondItem="sAd-GX-dfU" secondAttribute="top" constant="188" id="zLv-DS-aur"/>
+                                </constraints>
+                            </customView>
+                            <customView clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZg-Ks-4VD" userLabel="EVENTS">
+                                <rect key="frame" x="800" y="0.0" width="400" height="400"/>
+                                <subviews>
+                                    <imageView clipsToBounds="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9JV-qf-qw6" userLabel="ICON">
+                                        <rect key="frame" x="118" y="206" width="164" height="164"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="164" id="7Xx-Q2-yfS"/>
+                                            <constraint firstAttribute="width" constant="164" id="Nn1-EW-yec"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-icon-events" id="pgd-t0-Jav"/>
+                                    </imageView>
+                                    <textField clipsToBounds="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-r1-cOt" userLabel="TITLE" customClass="NSLabel" customModule="Lyne" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="184" width="300" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="cB0-an-sEP"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Share Data" id="vEp-AE-0Xb">
+                                            <font key="font" metaFont="system" size="24"/>
+                                            <color key="textColor" red="0.19510157580000001" green="0.10406452619999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField clipsToBounds="YES" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="GYt-8l-fd6" userLabel="SUBTITLE" customClass="NSWrapLabel" customModule="Lyne" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="111" width="300" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="lv8-Bd-M8W"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" alignment="center" title="Help us improve Lyne by allowing us to collect anonymous data and usage statistics." id="RiJ-Hx-jaW">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" red="0.19510157580000001" green="0.10406452619999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="lineSpaceEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineSpace">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centered" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="Ex7-Ec-1OD" userLabel="SWITCH">
+                                        <rect key="frame" x="179" y="89" width="42" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="FdP-zp-2Qd"/>
+                                            <constraint firstAttribute="width" constant="38" id="NNN-QW-7YO"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="switchButtonPress:" target="c3T-PO-a82" id="OWZ-4m-knu"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ex7-Ec-1OD" firstAttribute="top" secondItem="GYt-8l-fd6" secondAttribute="bottom" constant="-2" id="0AY-Jq-XXG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ky7-r1-cOt" secondAttribute="trailing" constant="52" id="0Y0-sm-lA1"/>
+                                    <constraint firstAttribute="width" constant="400" id="DEw-dI-ygA"/>
+                                    <constraint firstAttribute="height" constant="400" id="ED3-7u-EG3"/>
+                                    <constraint firstItem="Ky7-r1-cOt" firstAttribute="top" secondItem="jZg-Ks-4VD" secondAttribute="top" constant="188" id="EMB-09-ggB"/>
+                                    <constraint firstItem="9JV-qf-qw6" firstAttribute="top" secondItem="jZg-Ks-4VD" secondAttribute="top" constant="30" id="IUl-8V-C0S"/>
+                                    <constraint firstItem="GYt-8l-fd6" firstAttribute="leading" secondItem="jZg-Ks-4VD" secondAttribute="leading" constant="52" id="MD4-jF-hXr"/>
+                                    <constraint firstAttribute="trailing" secondItem="GYt-8l-fd6" secondAttribute="trailing" constant="52" id="SNg-1z-yhl"/>
+                                    <constraint firstItem="GYt-8l-fd6" firstAttribute="top" secondItem="Ky7-r1-cOt" secondAttribute="bottom" constant="17" id="V6k-xc-yAT"/>
+                                    <constraint firstItem="Ex7-Ec-1OD" firstAttribute="centerX" secondItem="jZg-Ks-4VD" secondAttribute="centerX" id="bHZ-yQ-NJV"/>
+                                    <constraint firstItem="9JV-qf-qw6" firstAttribute="centerX" secondItem="jZg-Ks-4VD" secondAttribute="centerX" id="qZO-sn-sDh"/>
+                                    <constraint firstItem="Ky7-r1-cOt" firstAttribute="leading" secondItem="jZg-Ks-4VD" secondAttribute="leading" constant="52" id="wlR-3V-vrq"/>
+                                </constraints>
+                            </customView>
+                            <customView clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTg-p1-CL5" userLabel="BOTTOM">
+                                <rect key="frame" x="30" y="40" width="340" height="32"/>
+                                <subviews>
+                                    <button hidden="YES" clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-S4-FgW" userLabel="PREVIOUS">
+                                        <rect key="frame" x="38" y="0.0" width="80" height="32"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="onboarding-button-previous" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cPL-sc-EVA">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="m0c-kf-G5E"/>
+                                            <constraint firstAttribute="width" constant="80" id="thZ-PN-YGc"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="bottomPreviousButtonPress:" target="c3T-PO-a82" id="pbA-6I-e8U"/>
+                                        </connections>
+                                    </button>
+                                    <customView clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xeq-55-JC0" userLabel="BULLETS">
+                                        <rect key="frame" x="153" y="12" width="34" height="8"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q9Z-9k-m2D" userLabel="WELCOME">
+                                                <rect key="frame" x="0.0" y="0.0" width="8" height="8"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onboarding-bullet" id="t7t-Mj-1nA"/>
+                                            </imageView>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rez-98-xMn" userLabel="LOGIN">
+                                                <rect key="frame" x="12" y="0.0" width="8" height="8"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onboarding-bullet" id="bZI-uc-t6d"/>
+                                            </imageView>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-rL-lMo" userLabel="EVENTS">
+                                                <rect key="frame" x="24" y="0.0" width="8" height="8"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onboarding-bullet" id="vOe-0z-YSe"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="4fV-00-mwM"/>
+                                            <constraint firstAttribute="width" constant="34" id="rzG-AX-1XX"/>
+                                        </constraints>
+                                    </customView>
+                                    <button clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p1T-54-5Ls" userLabel="NEXT">
+                                        <rect key="frame" x="222" y="0.0" width="80" height="32"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="onboarding-button-next" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AQL-cv-eJ0">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="8Qx-DI-qP7"/>
+                                            <constraint firstAttribute="width" constant="80" id="dmM-Gh-tSp"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="bottomNextButtonPress:" target="c3T-PO-a82" id="xXO-6v-02A"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" clipsToBounds="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXR-8X-Al6" userLabel="DONE">
+                                        <rect key="frame" x="222" y="0.0" width="80" height="32"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="onboarding-button-done" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="b2A-At-tKG">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="GUb-fs-SHs"/>
+                                            <constraint firstAttribute="height" constant="32" id="Qq6-LP-YP7"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="bottomDoneButtonPress:" target="c3T-PO-a82" id="QTE-Aq-gBO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lXR-8X-Al6" firstAttribute="centerY" secondItem="mTg-p1-CL5" secondAttribute="centerY" id="45O-19-Rik"/>
+                                    <constraint firstItem="p1T-54-5Ls" firstAttribute="leading" secondItem="xeq-55-JC0" secondAttribute="trailing" constant="35" id="7vX-eN-hWa"/>
+                                    <constraint firstItem="p1T-54-5Ls" firstAttribute="centerY" secondItem="mTg-p1-CL5" secondAttribute="centerY" id="KQX-PM-pj1"/>
+                                    <constraint firstItem="lXR-8X-Al6" firstAttribute="leading" secondItem="xeq-55-JC0" secondAttribute="trailing" constant="35" id="VIc-hV-EHd"/>
+                                    <constraint firstItem="aLm-S4-FgW" firstAttribute="centerY" secondItem="mTg-p1-CL5" secondAttribute="centerY" id="Yik-r9-Ua0"/>
+                                    <constraint firstItem="xeq-55-JC0" firstAttribute="centerX" secondItem="mTg-p1-CL5" secondAttribute="centerX" id="cAU-L2-sEs"/>
+                                    <constraint firstAttribute="height" constant="32" id="gQ8-R2-adp"/>
+                                    <constraint firstItem="xeq-55-JC0" firstAttribute="centerY" secondItem="mTg-p1-CL5" secondAttribute="centerY" id="mXu-MY-5ph"/>
+                                    <constraint firstItem="xeq-55-JC0" firstAttribute="leading" secondItem="aLm-S4-FgW" secondAttribute="trailing" constant="35" id="vps-b5-bUN"/>
+                                </constraints>
+                            </customView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p19-9P-plo" userLabel="H1">
+                                <rect key="frame" x="0.0" y="346" width="400" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="9sG-qY-vql"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-background-horizontal" id="kVI-2Z-zaN"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B6T-B3-3Bg" userLabel="H2">
+                                <rect key="frame" x="0.0" y="242" width="400" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Fk2-HG-C45"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-background-horizontal" id="FSm-Cp-3A4"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t68-oU-vfE" userLabel="V1">
+                                <rect key="frame" x="147" y="0.0" width="1" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Q66-Jk-jC5"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-background-vertical" id="KPz-dd-J3K"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nWy-M7-614" userLabel="V2">
+                                <rect key="frame" x="252" y="0.0" width="1" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="138-YI-Bii"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="onbording-background-vertical" id="lzG-RG-vk6"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5Tj-DM-FqY" firstAttribute="leading" secondItem="7AB-Xm-4Dg" secondAttribute="leading" id="0gx-7b-8Zw"/>
+                            <constraint firstItem="B6T-B3-3Bg" firstAttribute="top" secondItem="p19-9P-plo" secondAttribute="bottom" constant="103" id="14A-1k-2vz"/>
+                            <constraint firstItem="p19-9P-plo" firstAttribute="top" secondItem="7AB-Xm-4Dg" secondAttribute="top" constant="53" id="6ry-zP-ICa"/>
+                            <constraint firstAttribute="trailing" secondItem="5Tj-DM-FqY" secondAttribute="trailing" id="CPV-wc-6nP"/>
+                            <constraint firstAttribute="bottom" secondItem="nWy-M7-614" secondAttribute="bottom" id="HUm-ow-cSb"/>
+                            <constraint firstAttribute="trailing" secondItem="B6T-B3-3Bg" secondAttribute="trailing" id="N0r-qx-1Kj"/>
+                            <constraint firstItem="5Tj-DM-FqY" firstAttribute="top" secondItem="7AB-Xm-4Dg" secondAttribute="top" id="RaV-1p-LyF"/>
+                            <constraint firstItem="t68-oU-vfE" firstAttribute="leading" secondItem="7AB-Xm-4Dg" secondAttribute="leading" constant="147" id="TQ0-wc-YOg"/>
+                            <constraint firstItem="jZg-Ks-4VD" firstAttribute="top" secondItem="7AB-Xm-4Dg" secondAttribute="top" id="XeX-rk-Jf7"/>
+                            <constraint firstAttribute="bottom" secondItem="5Tj-DM-FqY" secondAttribute="bottom" id="YPM-nr-Kxk"/>
+                            <constraint firstItem="mTg-p1-CL5" firstAttribute="leading" secondItem="7AB-Xm-4Dg" secondAttribute="leading" constant="30" id="ZG3-lg-HbM"/>
+                            <constraint firstItem="gKx-2g-4nS" firstAttribute="leading" secondItem="7AB-Xm-4Dg" secondAttribute="leading" id="bTA-2b-13L"/>
+                            <constraint firstItem="nWy-M7-614" firstAttribute="top" secondItem="7AB-Xm-4Dg" secondAttribute="top" id="cpD-Ln-qPK"/>
+                            <constraint firstAttribute="trailing" secondItem="nWy-M7-614" secondAttribute="trailing" constant="147" id="dq6-hN-oae"/>
+                            <constraint firstAttribute="bottom" secondItem="t68-oU-vfE" secondAttribute="bottom" id="ent-S6-6GW"/>
+                            <constraint firstItem="gKx-2g-4nS" firstAttribute="top" secondItem="7AB-Xm-4Dg" secondAttribute="top" id="j2v-Um-kan"/>
+                            <constraint firstItem="sAd-GX-dfU" firstAttribute="top" secondItem="7AB-Xm-4Dg" secondAttribute="top" id="jRa-Ml-yz7"/>
+                            <constraint firstAttribute="bottom" secondItem="mTg-p1-CL5" secondAttribute="bottom" constant="40" id="n8P-Of-PWl"/>
+                            <constraint firstItem="p19-9P-plo" firstAttribute="leading" secondItem="7AB-Xm-4Dg" secondAttribute="leading" id="nOG-UU-yHk"/>
+                            <constraint firstItem="t68-oU-vfE" firstAttribute="top" secondItem="7AB-Xm-4Dg" secondAttribute="top" id="nRn-nz-nlb"/>
+                            <constraint firstAttribute="trailing" secondItem="p19-9P-plo" secondAttribute="trailing" id="r7A-lU-QXo"/>
+                            <constraint firstAttribute="trailing" secondItem="mTg-p1-CL5" secondAttribute="trailing" constant="30" id="vtx-Q9-A2b"/>
+                            <constraint firstItem="jZg-Ks-4VD" firstAttribute="leading" secondItem="sAd-GX-dfU" secondAttribute="trailing" id="wmD-ab-T26"/>
+                            <constraint firstItem="sAd-GX-dfU" firstAttribute="leading" secondItem="gKx-2g-4nS" secondAttribute="trailing" id="xL5-0u-B8k"/>
+                            <constraint firstItem="B6T-B3-3Bg" firstAttribute="leading" secondItem="7AB-Xm-4Dg" secondAttribute="leading" id="ztd-sz-oLe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomBulletEvents" destination="SnH-rL-lMo" id="CcL-Ak-W6f"/>
+                        <outlet property="bottomBulletLogin" destination="rez-98-xMn" id="zec-kj-JHz"/>
+                        <outlet property="bottomBulletWelcome" destination="q9Z-9k-m2D" id="h70-O0-Oqb"/>
+                        <outlet property="bottomDoneButton" destination="lXR-8X-Al6" id="4A3-Jc-r1x"/>
+                        <outlet property="bottomNextButton" destination="p1T-54-5Ls" id="db4-vu-p02"/>
+                        <outlet property="bottomPreviousButton" destination="aLm-S4-FgW" id="tib-wv-jZa"/>
+                        <outlet property="eventsSubtitleField" destination="GYt-8l-fd6" id="5T2-sq-gQl"/>
+                        <outlet property="eventsSwitchButton" destination="Ex7-Ec-1OD" id="C1a-sl-tqX"/>
+                        <outlet property="eventsTitleField" destination="Ky7-r1-cOt" id="0Up-xA-EOc"/>
+                        <outlet property="loginSubtitleField" destination="o2j-xW-W7O" id="IK3-tR-MDr"/>
+                        <outlet property="loginSwitchButton" destination="QaH-vC-NhD" id="jYZ-Na-Bqd"/>
+                        <outlet property="loginTitleField" destination="Szb-SL-JjI" id="6uB-c2-ofx"/>
+                        <outlet property="pageLeftConstraint" destination="bTA-2b-13L" id="l24-dF-IxZ"/>
+                        <outlet property="welcomeSubtitleField" destination="Twp-eC-k49" id="0fl-cK-md3"/>
+                        <outlet property="welcomeTitleField" destination="Ast-nK-LlN" id="OUk-zo-Hc2"/>
+                    </connections>
+                </viewController>
+                <customObject id="ttf-F6-zja" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="267"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboarding-bullet" width="6" height="6"/>
+        <image name="onboarding-button-done" width="80" height="32"/>
+        <image name="onboarding-button-next" width="80" height="32"/>
+        <image name="onboarding-button-previous" width="80" height="32"/>
+        <image name="onbording-background" width="400" height="400"/>
+        <image name="onbording-background-horizontal" width="400" height="1"/>
+        <image name="onbording-background-vertical" width="1" height="400"/>
+        <image name="onbording-icon-events" width="164" height="164"/>
+        <image name="onbording-icon-login" width="164" height="164"/>
+        <image name="onbording-icon-welcome" width="164" height="164"/>
+    </resources>
+</document>

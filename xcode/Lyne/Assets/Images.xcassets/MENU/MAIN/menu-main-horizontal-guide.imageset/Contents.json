@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "menu-horizontal-guide.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "menu-horizontal-guide@2x.png",
+      "idiom" : "mac",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

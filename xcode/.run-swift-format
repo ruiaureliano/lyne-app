@@ -1,0 +1,11 @@
+#!/bin/sh
+cd "$(dirname "$0")"
+echo "START FORMATING CODE\n"
+swift-format -r -i ./Lyne/Source  --configuration ./.swift-format
+echo "   🟢 Lyne/Source"
+swift-format -r -i ./Lyne\ \(Paddle\)/Source  --configuration ./.swift-format
+echo "   🟢 Lyne (Paddle)/Source"
+swift-format -r -i ./Lyne\ \(Setapp\)/Source  --configuration ./.swift-format
+echo "   🟢 Lyne (Setapp)/Source"
+swift-format -r -i ./Lyne\ \(Apple\)/Source  --configuration ./.swift-format
+echo "   🟢 Lyne (Apple)/Source"

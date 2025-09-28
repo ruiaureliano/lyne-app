@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "   🟢 Lyne Sentry Login"
+sentry-cli login --auth-token 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

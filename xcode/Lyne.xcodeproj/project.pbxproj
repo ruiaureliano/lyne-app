@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B275A8B82BF61A96006E4C12 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = B275A8B72BF61A96006E4C12 /* Mixpanel */; };
+		B275A8BA2BF61A9F006E4C12 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = B275A8B92BF61A9F006E4C12 /* Mixpanel */; };
+		B275A8BC2BF61AA4006E4C12 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = B275A8BB2BF61AA4006E4C12 /* Mixpanel */; };
+		B2EDE0B02BEC13AB00EB6D84 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = B2EDE0AF2BEC13AB00EB6D84 /* Sentry */; };
+		B2EDE0B32BEC13BD00EB6D84 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = B2EDE0B22BEC13BD00EB6D84 /* Sentry */; };
+		B2EDE0B52BEC13C200EB6D84 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = B2EDE0B42BEC13C200EB6D84 /* Sentry */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B2710C7D2B371DD700C19A83 /* Lyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2710C902B371DF800C19A83 /* Lyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DC46092B4EF594008482BA /* Lyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B2A5FF7A2E89EB8D00358DDD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Source/app/AppDelegate.swift,
+				"Supporting Files/lyne-apple-info.plist",
+			);
+			target = B2DC46082B4EF594008482BA /* Lyne (Apple) */;
+		};
+		B2A5FF912E89EBBB00358DDD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Source/app/AppDelegate.swift,
+				"Supporting Files/lyne-paddle-info.plist",
+			);
+			target = B2710C8F2B371DF800C19A83 /* Lyne (Paddle) */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B2A500502E89EBF100358DDD /* Lyne */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Lyne; sourceTree = "<group>"; };
+		B2A5FF772E89EB8D00358DDD /* Lyne (Apple) */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (B2A5FF7A2E89EB8D00358DDD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Lyne (Apple)"; sourceTree = "<group>"; };
+		B2A5FF8E2E89EBBB00358DDD /* Lyne (Paddle) */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (B2A5FF912E89EBBB00358DDD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Lyne (Paddle)"; sourceTree = "<group>"; };
+		B2A5FF9C2E89EBD700358DDD /* Lyne (Setapp) */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Lyne (Setapp)"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2710C7A2B371DD700C19A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B275A8BC2BF61AA4006E4C12 /* Mixpanel in Frameworks */,
+				B2EDE0B52BEC13C200EB6D84 /* Sentry in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2710C8D2B371DF800C19A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B275A8BA2BF61A9F006E4C12 /* Mixpanel in Frameworks */,
+				B2EDE0B32BEC13BD00EB6D84 /* Sentry in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DC46062B4EF594008482BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B275A8B82BF61A96006E4C12 /* Mixpanel in Frameworks */,
+				B2EDE0B02BEC13AB00EB6D84 /* Sentry in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2710C5E2B371DA700C19A83 = {
+			isa = PBXGroup;
+			children = (
+				B2A500502E89EBF100358DDD /* Lyne */,
+				B2A5FF772E89EB8D00358DDD /* Lyne (Apple) */,
+				B2A5FF8E2E89EBBB00358DDD /* Lyne (Paddle) */,
+				B2A5FF9C2E89EBD700358DDD /* Lyne (Setapp) */,
+				B2710C682B371DA700C19A83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2710C682B371DA700C19A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2710C7D2B371DD700C19A83 /* Lyne.app */,
+				B2710C902B371DF800C19A83 /* Lyne.app */,
+				B2DC46092B4EF594008482BA /* Lyne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2710C7C2B371DD700C19A83 /* Lyne (Setapp) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2710C892B371DD900C19A83 /* Build configuration list for PBXNativeTarget "Lyne (Setapp)" */;
+			buildPhases = (
+				B2710C792B371DD700C19A83 /* Sources */,
+				B2710C7A2B371DD700C19A83 /* Frameworks */,
+				B2710C7B2B371DD700C19A83 /* Resources */,
+				B2710CB02B37204700C19A83 /* Run Script (SwiftLint) */,
+				B2EB7B3D2BEE670200B059E9 /* Run Script (Upload Debug Symbols to Sentry) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B2A500502E89EBF100358DDD /* Lyne */,
+				B2A5FF9C2E89EBD700358DDD /* Lyne (Setapp) */,
+			);
+			name = "Lyne (Setapp)";
+			packageProductDependencies = (
+				B2EDE0B42BEC13C200EB6D84 /* Sentry */,
+				B275A8BB2BF61AA4006E4C12 /* Mixpanel */,
+			);
+			productName = "Andy (Setapp)";
+			productReference = B2710C7D2B371DD700C19A83 /* Lyne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2710C8F2B371DF800C19A83 /* Lyne (Paddle) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2710C9C2B371DF900C19A83 /* Build configuration list for PBXNativeTarget "Lyne (Paddle)" */;
+			buildPhases = (
+				B2710C8C2B371DF800C19A83 /* Sources */,
+				B2710C8D2B371DF800C19A83 /* Frameworks */,
+				B2710C8E2B371DF800C19A83 /* Resources */,
+				B2710CB12B37205700C19A83 /* Run Script (SwiftLint) */,
+				B2EB7B3C2BEE66E300B059E9 /* Run Script (Upload Debug Symbols to Sentry) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B2A500502E89EBF100358DDD /* Lyne */,
+			);
+			name = "Lyne (Paddle)";
+			packageProductDependencies = (
+				B2EDE0B22BEC13BD00EB6D84 /* Sentry */,
+				B275A8B92BF61A9F006E4C12 /* Mixpanel */,
+			);
+			productName = "Andy (Paddle)";
+			productReference = B2710C902B371DF800C19A83 /* Lyne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2DC46082B4EF594008482BA /* Lyne (Apple) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DC46172B4EF596008482BA /* Build configuration list for PBXNativeTarget "Lyne (Apple)" */;
+			buildPhases = (
+				B2DC46052B4EF594008482BA /* Sources */,
+				B2DC46062B4EF594008482BA /* Frameworks */,
+				B2DC46072B4EF594008482BA /* Resources */,
+				B2DC46512B4EF6E0008482BA /* Run Script (SwiftLint) */,
+				B2EB7B3B2BEE66BD00B059E9 /* Run Script (Upload Debug Symbols to Sentry) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B2A500502E89EBF100358DDD /* Lyne */,
+			);
+			name = "Lyne (Apple)";
+			packageProductDependencies = (
+				B2EDE0AF2BEC13AB00EB6D84 /* Sentry */,
+				B275A8B72BF61A96006E4C12 /* Mixpanel */,
+			);
+			productName = "Andy (Apple)";
+			productReference = B2DC46092B4EF594008482BA /* Lyne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2710C5F2B371DA700C19A83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					B2710C7C2B371DD700C19A83 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1520;
+					};
+					B2710C8F2B371DF800C19A83 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1520;
+					};
+					B2DC46082B4EF594008482BA = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = B2710C622B371DA700C19A83 /* Build configuration list for PBXProject "Lyne" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2710C5E2B371DA700C19A83;
+			packageReferences = (
+				B2EDE0AE2BEC13AB00EB6D84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				B275A8B62BF61A96006E4C12 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+			);
+			productRefGroup = B2710C682B371DA700C19A83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2DC46082B4EF594008482BA /* Lyne (Apple) */,
+				B2710C8F2B371DF800C19A83 /* Lyne (Paddle) */,
+				B2710C7C2B371DD700C19A83 /* Lyne (Setapp) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2710C7B2B371DD700C19A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2710C8E2B371DF800C19A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DC46072B4EF594008482BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2710CB02B37204700C19A83 /* Run Script (SwiftLint) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (SwiftLint)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B2710CB12B37205700C19A83 /* Run Script (SwiftLint) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (SwiftLint)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B2DC46512B4EF6E0008482BA /* Run Script (SwiftLint) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (SwiftLint)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B2EB7B3B2BEE66BD00B059E9 /* Run Script (Upload Debug Symbols to Sentry) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (Upload Debug Symbols to Sentry)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which sentry-cli >/dev/null; then\n\texport SENTRY_ORG=ola-brothers\n\texport SENTRY_PROJECT=lyne-apple\n\tERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\n\tif [ ! $? -eq 0 ]; then\n\t\techo \"warning: sentry-cli - $ERROR\"\n\tfi\nelse\n\techo \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+		B2EB7B3C2BEE66E300B059E9 /* Run Script (Upload Debug Symbols to Sentry) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (Upload Debug Symbols to Sentry)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which sentry-cli >/dev/null; then\n\texport SENTRY_ORG=ola-brothers\n\texport SENTRY_PROJECT=lyne-paddle\n\tERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\n\tif [ ! $? -eq 0 ]; then\n\t\techo \"warning: sentry-cli - $ERROR\"\n\tfi\nelse\n\techo \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+		B2EB7B3D2BEE670200B059E9 /* Run Script (Upload Debug Symbols to Sentry) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (Upload Debug Symbols to Sentry)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which sentry-cli >/dev/null; then\n\texport SENTRY_ORG=ola-brothers\n\texport SENTRY_PROJECT=lyne-setapp\n\tERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\n\tif [ ! $? -eq 0 ]; then\n\t\techo \"warning: sentry-cli - $ERROR\"\n\tfi\nelse\n\techo \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2710C792B371DD700C19A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2710C8C2B371DF800C19A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DC46052B4EF594008482BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B2710C742B371DA900C19A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2710C752B371DA900C19A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B2710C8A2B371DD900C19A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Lyne (Setapp)/Supporting Files/lyne-setapp.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 240603;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TQWQC67C6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lyne (Setapp)/Supporting Files/lyne-setapp-info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lyne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Olá Brothers LDA. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.lyneapp.lyne-setapp";
+				PRODUCT_MODULE_NAME = Lyne;
+				PRODUCT_NAME = Lyne;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B2710C8B2B371DD900C19A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Lyne (Setapp)/Supporting Files/lyne-setapp.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 240603;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TQWQC67C6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lyne (Setapp)/Supporting Files/lyne-setapp-info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lyne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Olá Brothers LDA. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.lyneapp.lyne-setapp";
+				PRODUCT_MODULE_NAME = Lyne;
+				PRODUCT_NAME = Lyne;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B2710C9D2B371DF900C19A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Lyne (Paddle)/Supporting Files/lyne-paddle.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 240603;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TQWQC67C6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lyne (Paddle)/Supporting Files/lyne-paddle-info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lyne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Olá Brothers LDA. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.lyneapp.lyne-paddle";
+				PRODUCT_MODULE_NAME = Lyne;
+				PRODUCT_NAME = Lyne;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B2710C9E2B371DF900C19A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Lyne (Paddle)/Supporting Files/lyne-paddle.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 240603;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TQWQC67C6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lyne (Paddle)/Supporting Files/lyne-paddle-info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lyne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Olá Brothers LDA. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.lyneapp.lyne-paddle";
+				PRODUCT_MODULE_NAME = Lyne;
+				PRODUCT_NAME = Lyne;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B2DC46152B4EF596008482BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Lyne (Apple)/Supporting Files/lyne-apple.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 250928;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TQWQC67C6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Lyne;
+				INFOPLIST_FILE = "Lyne (Apple)/Supporting Files/lyne-apple-info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lyne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Olá Brothers LDA. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.lyneapp.lyne;
+				PRODUCT_MODULE_NAME = Lyne;
+				PRODUCT_NAME = Lyne;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B2DC46162B4EF596008482BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Lyne (Apple)/Supporting Files/lyne-apple.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 250928;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TQWQC67C6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Lyne;
+				INFOPLIST_FILE = "Lyne (Apple)/Supporting Files/lyne-apple-info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lyne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Olá Brothers LDA. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.lyneapp.lyne;
+				PRODUCT_MODULE_NAME = Lyne;
+				PRODUCT_NAME = Lyne;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2710C622B371DA700C19A83 /* Build configuration list for PBXProject "Lyne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2710C742B371DA900C19A83 /* Debug */,
+				B2710C752B371DA900C19A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2710C892B371DD900C19A83 /* Build configuration list for PBXNativeTarget "Lyne (Setapp)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2710C8A2B371DD900C19A83 /* Debug */,
+				B2710C8B2B371DD900C19A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2710C9C2B371DF900C19A83 /* Build configuration list for PBXNativeTarget "Lyne (Paddle)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2710C9D2B371DF900C19A83 /* Debug */,
+				B2710C9E2B371DF900C19A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DC46172B4EF596008482BA /* Build configuration list for PBXNativeTarget "Lyne (Apple)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DC46152B4EF596008482BA /* Debug */,
+				B2DC46162B4EF596008482BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B275A8B62BF61A96006E4C12 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B2EDE0AE2BEC13AB00EB6D84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.25.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B275A8B72BF61A96006E4C12 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B275A8B62BF61A96006E4C12 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+		B275A8B92BF61A9F006E4C12 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B275A8B62BF61A96006E4C12 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+		B275A8BB2BF61AA4006E4C12 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B275A8B62BF61A96006E4C12 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+		B2EDE0AF2BEC13AB00EB6D84 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2EDE0AE2BEC13AB00EB6D84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		B2EDE0B22BEC13BD00EB6D84 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2EDE0AE2BEC13AB00EB6D84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		B2EDE0B42BEC13C200EB6D84 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2EDE0AE2BEC13AB00EB6D84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B2710C5F2B371DA700C19A83 /* Project object */;
+}

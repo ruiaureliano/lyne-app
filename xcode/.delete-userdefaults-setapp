@@ -1,0 +1,3 @@
+#!/bin/sh
+defaults delete net.lyneapp.Line-setapp
+echo "   🟢 Delete [delete net.lyneapp.Line-setapp]"

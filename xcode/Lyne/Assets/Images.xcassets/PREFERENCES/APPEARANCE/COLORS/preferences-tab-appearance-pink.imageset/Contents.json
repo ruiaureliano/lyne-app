@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "preferences-tab-appearance-pink.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "preferences-tab-appearance-pink@2x.png",
+      "idiom" : "mac",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
